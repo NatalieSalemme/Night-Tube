@@ -25,6 +25,9 @@ body {
 .brand-logo-container {
   margin: .5em 0;
 }
+.brand-logo-container:hover {
+  cursor: pointer;
+}
 .video-container {
   background-color: black;
     height: 400px;
@@ -54,7 +57,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: lightgray;
+  background: rgb(175, 168, 181);
   max-width: 125px;
   color: black;
   font-weight: bold;

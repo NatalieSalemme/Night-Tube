@@ -13,6 +13,7 @@ class SearchBar extends React.Component {
       searchTerm: e.target.value
     });
   }
+
   onFormSubmit = e => {
     e.preventDefault();
     this.props.onInputSubmit(this.state.searchTerm);
@@ -23,7 +24,8 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="ui form search-container">
-        <BrandLogo />
+        <BrandLogo
+          onFormSubmit={this.onFormSubmit}/>
         <form
           onSubmit={this.onFormSubmit}>
           <div className="ui icon input search-bar">

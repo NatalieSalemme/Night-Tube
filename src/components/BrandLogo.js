@@ -1,9 +1,12 @@
 import React from 'react';
 
-const BrandLogo = () => {
+const BrandLogo = (props) => {
   return (
-    <div className="brand-logo-container">
-      <h4 className="brand-logo">NightTube</h4>
+    <div
+    onClick={props.onFormSubmit}
+    className="brand-logo-container">
+      <h4
+      className="brand-logo">BingeTube</h4>
     </div>
   );
 }

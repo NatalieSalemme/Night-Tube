@@ -10,6 +10,9 @@ class App extends React.Component {
     videos: [],
     selectedVideo: null
   }
+  componentDidMount() {
+    this.onInputSubmit('vine compilation');
+  }
   onInputSubmit = async searchTerm => {
     const response = await
     Youtube.get('/search', {
