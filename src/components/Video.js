@@ -6,7 +6,9 @@ const Video = ({ video, onVideoSelect }) => {
       className="video"
       onClick={() => onVideoSelect(video)}>
       <div className="video-title">
-        <h4>{video.snippet.title} </h4>
+        <h4>{video.snippet.title.length > 35 ?
+          `${video.snippet.title.slice(0,1).toUpperCase()}${video.snippet.title.slice(1, 35).toLowerCase()}...` :
+          `${video.snippet.title.slice(0,1).toUpperCase()}${video.snippet.title.slice(1).toLowerCase()}`}</h4>
       </div>
       <img
         className="video-thumbnail"
