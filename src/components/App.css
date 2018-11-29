@@ -53,6 +53,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid gray;
+  border-style: outset;
+  margin-bottom: .4em;
 }
 
 .first-row, .second-row {
@@ -65,4 +68,16 @@ body {
 }
 .second-row {
   padding-right: .2em;
+}
+.second-video-row {
+  /* border: 2px dotted white; */
+}
+.one-vid-row {
+  /* border: 2px dotted blue; */
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: .7em;
 }

@@ -14,7 +14,6 @@ const Video = ({ video, onVideoSelect }) => {
         className="video-thumbnail"
         src={video.snippet.thumbnails.medium.url}
         alt={video.snippet.title} />
-
     </div>
   );
 }

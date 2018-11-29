@@ -20,7 +20,17 @@ const VideoList = ({ videos, onVideoSelect, video }) => {
             video={video} />
         </div>
         <div className="two wide column second-row">
-          {renderedList.slice(3)}
+          {renderedList.slice(3, 6)}
+        </div>
+      </div>
+
+
+      <div className="second-video-row ">
+        <div className="one-vid-row">
+          {renderedList.slice(6, 15)}
+        </div>
+        <div className="one-vid-row">
+          {renderedList.slice(15)}
         </div>
       </div>
     </div>
