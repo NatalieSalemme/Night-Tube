@@ -1,6 +1,9 @@
+body {
+  /* background-color: black; */
+}
 .search-bar {
   width: 50em;
-  margin-top: 2em;
+  margin: .5em 0;
 }
 
 .search-container {
@@ -16,6 +19,26 @@
   margin-left: -13em;
 }
 .brand-logo-container {
-  margin-top: 2em;
+  margin: .5em 0;
+}
+.video-player {
 
+}
+.video-container {
+  background-color: black;
+    height: 400px;
+    width: 300px;
+}
+.video:hover {
+  cursor: pointer;
+}
+.video-thumbnail {
+  height: 125px;
+  width: 125px;
+}
+.video-title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 125px;
+  text-align: center;
 }
