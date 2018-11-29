@@ -1,5 +1,9 @@
 .search-bar {
-  width: 50%;
-  margin: auto;
+  width: 50em;
   margin-top: 2em;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
 }
