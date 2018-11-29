@@ -1,5 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  /* background-color: black; */
+  background-color: black;
 }
 .search-bar {
   width: 50em;
@@ -21,9 +25,6 @@ body {
 .brand-logo-container {
   margin: .5em 0;
 }
-.video-player {
-
-}
 .video-container {
   background-color: black;
     height: 400px;
@@ -33,12 +34,34 @@ body {
   cursor: pointer;
 }
 .video-thumbnail {
-  height: 125px;
-  width: 125px;
+  height: 120px;
+  width: 120px;
 }
 .video-title {
   display: flex;
-  flex-wrap: wrap;
-  width: 125px;
+  width: 120px;
+  margin: auto;
+  color: white;
   text-align: center;
+  margin:auto;
+  justify-content: center;
+}
+.video {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-row, .second-row {
+  display: flex;
+  text-align: center;
+  padding-left: .2em;
+}
+.first-row {
+  padding-left: .2em;
+}
+.second-row {
+  padding-right: .2em;
 }

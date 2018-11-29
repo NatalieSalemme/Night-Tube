@@ -10,13 +10,19 @@ const VideoList = ({ videos, onVideoSelect, video }) => {
       onVideoSelect={onVideoSelect} />
   })
   return (
-    <div>
-    {renderedList.slice(0,5)}
-    <div className="ui container">
-    <VideoInfo
-      video={video} />
-    </div>
-    {renderedList.slice(5)}
+    <div className="ui grid">
+      <div className="ui row">
+        <div className="two wide column first-row">
+        {renderedList.slice(0,3)}
+        </div>
+        <div className="ui container twelve wide column">
+          <VideoInfo
+            video={video} />
+        </div>
+        <div className="two wide column second-row">
+          {renderedList.slice(3)}
+        </div>
+      </div>
     </div>
   );
 }
