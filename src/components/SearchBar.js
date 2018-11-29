@@ -1,4 +1,6 @@
 import React from 'react';
+import BrandLogo from './BrandLogo';
+
 import './App.css';
 
 class SearchBar extends React.Component {
@@ -13,11 +15,12 @@ class SearchBar extends React.Component {
   }
   onFormSubmit = e => {
     e.preventDefault();
-
+    this.props.onInputSubmit(this.state.searchTerm);
   }
   render() {
     return (
       <div className="ui form search-container">
+        <BrandLogo />
         <form
           onSubmit={this.onFormSubmit}>
           <div className="ui icon input search-bar">

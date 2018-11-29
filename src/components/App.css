@@ -7,3 +7,15 @@
   display: flex;
   justify-content: center;
 }
+.brand-logo {
+  font-size: 25px;
+  background-color: rgb(66, 219, 100);
+  display: inline-block;
+  border-radius: 10px;
+  padding: .2em;
+  margin-left: -13em;
+}
+.brand-logo-container {
+  margin-top: 2em;
+
+}
