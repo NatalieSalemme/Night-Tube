@@ -37,6 +37,32 @@ body {
   height: 120px;
   width: 120px;
 }
+.video-thumbnail:hover {
+  height: 125px;
+  width: 125px;
+}
+.img-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-description {
+  position: absolute;
+  /* visibility: hidden; */
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: lightgray;
+  max-width: 125px;
+  color: black;
+  font-weight: bold;
+}
+.img-wrap:hover .img-description:hover {
+  visibility: visible;
+  opacity: .7;
+}
 .video-title {
   display: flex;
   width: 120px;
